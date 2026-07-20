@@ -27,7 +27,7 @@ export function Header() {
               href="#"
               className="text-lg font-black tracking-tight uppercase text-zinc-900 dark:text-zinc-50"
             >
-              Portfolio
+              Sakib.
             </a>
           </div>
 

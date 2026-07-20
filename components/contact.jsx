@@ -35,7 +35,7 @@ export function Contact() {
           transition={{ duration: 0.4, delay: 0.2 }}
         >
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:sakiba505@gmail.com"
             className="inline-flex items-center gap-2 px-8 py-3.5 bg-zinc-900 hover:bg-zinc-800 dark:bg-zinc-50 dark:text-zinc-950 dark:hover:bg-zinc-200 text-white text-xs font-black uppercase tracking-widest transition-colors"
           >
             Say Hello
@@ -49,7 +49,7 @@ export function Contact() {
           className="flex justify-center gap-1 mt-12"
         >
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/sakibahamedsihab"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-900 dark:hover:border-zinc-100 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
@@ -68,7 +68,7 @@ export function Contact() {
             </svg>
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/sakib-ahamed-sihab"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-900 dark:hover:border-zinc-100 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"

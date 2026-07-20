@@ -28,9 +28,9 @@ export function About() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            I&apos;m a web developer with a passion for building clean,
-            user-friendly applications. I enjoy turning complex problems into
-            simple, beautiful solutions that make a real impact.
+            I'm Sakib Ahamed, a passionate Full Stack Developer specializing in
+            the MERN stack. I love turning real-world problems into clean,
+            scalable web applications that make a genuine impact.
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
@@ -38,9 +38,9 @@ export function About() {
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
           >
-            I specialize in modern web technologies including React, Next.js,
-            TypeScript, and Node.js. I&apos;m always exploring new tools and
-            techniques to improve my craft.
+            I build end-to-end applications using React.js, Next.js, Node.js,
+            Express, and MongoDB. I care deeply about clean code, great UX,
+            and shipping products that work reliably in production.
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
@@ -48,9 +48,9 @@ export function About() {
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
           >
-            When I&apos;m not coding, you&apos;ll find me exploring new tech,
-            contributing to open source, or working on side projects that
-            challenge my skills and creativity.
+            When I'm not coding, I'm exploring new tools, building side
+            projects, and constantly leveling up my skills. I'm open to
+            freelance work and full-time opportunities.
           </motion.p>
         </motion.div>
       </div>

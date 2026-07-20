@@ -1,26 +1,29 @@
 export const projects = [
   {
-    title: "Project Alpha",
+    title: "ServiceHub",
     description:
-      "A full-stack web application built with React and Node.js. Features real-time data updates and a responsive dashboard.",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "A full-stack service marketplace where users can browse, book, and manage local services. Features secure JWT authentication, role-based access for providers and clients, real-time booking management, and an intuitive dashboard.",
+    tags: ["React", "Node.js", "Express", "MongoDB", "JWT", "Mongoose"],
+    liveUrl: "https://servicehub-client-five.vercel.app",
+    githubUrl: "https://github.com/sakibahamedsihab/servicehub-client",
+    image: "/projects/servicehub.png",
   },
   {
-    title: "Project Beta",
+    title: "Retro Recipe",
     description:
-      "An e-commerce platform with payment integration, user authentication, and an admin panel for inventory management.",
-    tags: ["Next.js", "Stripe", "Prisma", "PostgreSQL"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "A community-driven recipe sharing platform with a vintage aesthetic. Users can explore, add, and manage recipes with category filtering, rich media support, and a full-featured CRUD backend built on Express and MongoDB.",
+    tags: ["React", "Node.js", "Express", "MongoDB", "Mongoose", "JWT"],
+    liveUrl: "https://retro-recipe-client.vercel.app",
+    githubUrl: "https://github.com/sakibahamedsihab/retro-recipe-client",
+    image: "/projects/retro-recipe.png",
   },
   {
-    title: "Project Gamma",
+    title: "Pet Adoption Platform",
     description:
-      "A landing page and marketing site for a SaaS product, optimized for performance and SEO with modern animations.",
-    tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "A compassionate pet adoption web app connecting animals in need with loving homes. Features pet listings with filters, adoption request management, user authentication, and a secure admin panel for shelters.",
+    tags: ["React", "Node.js", "Express", "MongoDB", "JWT", "Mongoose"],
+    liveUrl: "https://pet-adoption-client-rho.vercel.app",
+    githubUrl: "https://github.com/sakibahamedsihab/pet-adoption-client",
+    image: "/projects/pet-adoption.png",
   },
 ];

@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Your Name — Web Developer",
+  title: "Sakib Ahamed — Full Stack Developer",
   description:
-    "Portfolio of Your Name, a web developer specializing in modern web technologies.",
+    "Portfolio of Sakib Ahamed, a MERN Stack Developer specializing in React, Node.js, Express, and MongoDB.",
 };
 
 export default function RootLayout({ children }) {

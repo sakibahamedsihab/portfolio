@@ -25,7 +25,7 @@ export function Hero() {
           transition={{ delay: 0.3, duration: 0.5 }}
           className="text-6xl md:text-8xl font-black text-zinc-900 dark:text-zinc-50 mb-6 tracking-tighter leading-none"
         >
-          PRIYANKA
+          SAKIB AHAMED
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -33,7 +33,7 @@ export function Hero() {
           transition={{ delay: 0.5, duration: 0.4 }}
           className="text-sm uppercase tracking-widest font-semibold text-zinc-400 dark:text-zinc-500 mb-8"
         >
-          Web Developer
+          Full Stack Developer
         </motion.p>
         <motion.p
           initial={{ opacity: 0 }}
@@ -41,7 +41,7 @@ export function Hero() {
           transition={{ delay: 0.6, duration: 0.4 }}
           className="text-xs uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-12 max-w-md mx-auto leading-relaxed font-medium"
         >
-          I build clean, performant web experiences with modern technologies.
+          I build scalable, full-stack web apps with the MERN stack.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 12 }}

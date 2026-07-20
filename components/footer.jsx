@@ -8,11 +8,11 @@ export function Footer() {
               href="#"
               className="text-lg font-black tracking-tight uppercase text-zinc-900 dark:text-zinc-50"
             >
-              Portfolio
+              Sakib.
             </a>
             <p className="text-xs leading-relaxed text-zinc-500 dark:text-zinc-400 max-w-xs">
-              A web developer building clean, performant web experiences with
-              modern technologies.
+              A MERN Stack Developer building scalable, full-stack web
+              applications with modern technologies.
             </p>
           </div>
 
@@ -63,7 +63,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/sakibahamedsihab"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs uppercase tracking-wider font-medium text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors"
@@ -73,7 +73,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://linkedin.com/in/sakib-ahamed-sihab"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs uppercase tracking-wider font-medium text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors"
@@ -90,7 +90,7 @@ export function Footer() {
             </h3>
             <div className="flex items-center gap-1">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/sakibahamedsihab"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-900 dark:hover:border-zinc-100 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
@@ -109,7 +109,7 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/sakib-ahamed-sihab"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-900 dark:hover:border-zinc-100 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
@@ -135,7 +135,7 @@ export function Footer() {
 
         <div className="mt-16 pt-8 border-t border-zinc-100 dark:border-zinc-900 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs tracking-wide text-zinc-400 dark:text-zinc-500 uppercase">
-            &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+             &copy; {new Date().getFullYear()} Sakib Ahamed. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">
             <a href="#" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">
