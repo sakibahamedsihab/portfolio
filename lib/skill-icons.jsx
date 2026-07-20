@@ -1,0 +1,33 @@
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiHtml5,
+  SiNodedotjs,
+  SiExpress,
+  SiPostgresql,
+  SiMongodb,
+  SiGit,
+  SiDocker,
+  SiVscodium,
+  SiFigma,
+  SiVercel,
+} from "react-icons/si";
+
+export const skillIconMap = {
+  React: <SiReact />,
+  "Next.js": <SiNextdotjs />,
+  TypeScript: <SiTypescript />,
+  "Tailwind CSS": <SiTailwindcss />,
+  "HTML/CSS": <SiHtml5 />,
+  "Node.js": <SiNodedotjs />,
+  Express: <SiExpress />,
+  PostgreSQL: <SiPostgresql />,
+  MongoDB: <SiMongodb />,
+  Git: <SiGit />,
+  Docker: <SiDocker />,
+  "VS Code": <SiVscodium />,
+  Figma: <SiFigma />,
+  Vercel: <SiVercel />,
+};
