@@ -1,7 +1,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 import { LuUser, LuCode, LuZap, LuMail, LuFileText, LuMenu, LuX, LuGraduationCap } from "react-icons/lu";
 
@@ -20,6 +21,45 @@ const navLinks = [
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+  const pathname = usePathname();
+
+  useEffect(() => {
+    // Only track sections if we are on the homepage
+    if (pathname !== "/") {
+      setActiveSection("");
+      return;
+    }
+
+    const handleScroll = () => {
+      const sectionIds = navLinks.map(l => l.href.replace('/#', ''));
+      let current = "";
+      
+      for (const id of sectionIds) {
+        const element = document.getElementById(id);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          // If the top of the section is above the middle of the screen
+          if (rect.top <= window.innerHeight / 3) {
+            current = id;
+          }
+        }
+      }
+      
+      if (current) {
+        setActiveSection(current);
+      } else if (window.scrollY < 100) {
+        setActiveSection("");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // Initial check
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [pathname]);
+
+  const isActive = (href) => activeSection === href.replace('/#', '');
 
   return (
     <header className="sticky top-0 z-40 bg-white/70 backdrop-blur-xl border-b border-zinc-200/50 dark:bg-zinc-950/70 dark:border-zinc-800/50 transition-colors duration-200">
@@ -41,7 +81,11 @@ export function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-xs uppercase tracking-widest font-semibold transition-colors h-full flex items-center gap-2 border-b-2 relative top-[1px] border-transparent text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50"
+                className={`text-xs uppercase tracking-widest font-semibold transition-colors h-full flex items-center gap-2 border-b-2 relative top-[1px] ${
+                  isActive(link.href) 
+                    ? "text-emerald-600 dark:text-emerald-400 border-emerald-500" 
+                    : "text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 border-transparent"
+                }`}
               >
                 <link.icon className="w-4 h-4 mb-[2px]" />
                 {link.label}
@@ -104,7 +148,11 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-xs uppercase tracking-widest font-semibold flex items-center gap-2 text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors"
+                className={`text-xs uppercase tracking-widest font-semibold flex items-center gap-2 relative w-max border-b-2 pb-[2px] ${
+                  isActive(link.href) 
+                    ? "text-emerald-600 dark:text-emerald-400 border-emerald-500" 
+                    : "text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 border-transparent"
+                } transition-colors`}
               >
                 <link.icon className="w-4 h-4 mb-[2px]" />
                 {link.label}
