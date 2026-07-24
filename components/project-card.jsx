@@ -10,7 +10,7 @@ export function ProjectCard({ project }) {
     <motion.div
       whileHover={{ y: -4 }}
       transition={{ duration: 0.2, ease: "easeOut" }}
-      className="bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-emerald-500 transition-colors overflow-hidden"
+      className="bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-emerald-500 transition-colors overflow-hidden h-full flex flex-col"
     >
       {/* Project Screenshot */}
       <div className="aspect-video relative overflow-hidden bg-zinc-100 dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800">
@@ -50,11 +50,11 @@ export function ProjectCard({ project }) {
       </div>
 
       {/* Card Content */}
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-1">
         <h3 className="text-[13px] font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-widest mb-3 font-display">
           {project.title}
         </h3>
-        <p className="text-xs uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-4 leading-relaxed font-medium">
+        <p className="text-xs uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-4 leading-relaxed font-medium flex-1">
           {project.description}
         </p>
         <div className="flex flex-wrap gap-2 mb-4">

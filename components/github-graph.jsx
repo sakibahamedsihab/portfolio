@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import { useTheme } from "@/lib/theme-provider";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GitHubCalendar } from "react-github-calendar";
+import { Tooltip as ReactTooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 
 export function GithubGraph() {
   const { theme } = useTheme();
@@ -42,14 +44,35 @@ export function GithubGraph() {
         >
           <div className="w-full overflow-x-auto scrollbar-hide flex justify-center">
             {mounted && (
-              <GitHubCalendar 
-                username="sakibahamedsihab" 
-                theme={explicitTheme}
-                colorScheme={theme === 'dark' ? 'dark' : 'light'}
-                blockSize={14}
-                blockMargin={5}
-                fontSize={14}
-              />
+              <>
+                <GitHubCalendar 
+                  username="sakibahamedsihab" 
+                  theme={explicitTheme}
+                  colorScheme={theme === 'dark' ? 'dark' : 'light'}
+                  blockSize={14}
+                  blockMargin={5}
+                  fontSize={14}
+                  renderBlock={(block, activity) => 
+                    React.cloneElement(block, {
+                      "data-tooltip-id": "github-tooltip",
+                      "data-tooltip-content": `${activity.count} contributions on ${activity.date}`
+                    })
+                  }
+                />
+                <ReactTooltip 
+                  id="github-tooltip" 
+                  style={{
+                    backgroundColor: theme === 'dark' ? '#18181b' : '#10b981',
+                    color: '#fff',
+                    borderRadius: '4px',
+                    padding: '6px 10px',
+                    fontSize: '12px',
+                    fontWeight: 'bold',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em'
+                  }}
+                />
+              </>
             )}
           </div>
         </motion.div>
