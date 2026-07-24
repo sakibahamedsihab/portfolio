@@ -5,6 +5,7 @@ import { Skills } from "@/components/skills";
 import { Contact } from "@/components/contact";
 import { Stats } from "@/components/stats";
 import { Testimonials } from "@/components/testimonials";
+import { GithubGraph } from "@/components/github-graph";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       {/* <Testimonials /> */}
       <Skills />
       <Projects />
+      <GithubGraph />
       <Contact />
     </>
   );
