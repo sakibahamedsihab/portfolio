@@ -14,7 +14,7 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.4 }}
-          className="text-xs font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-widest mb-6"
+          className="text-3xl md:text-4xl font-black text-zinc-900 dark:text-zinc-50 tracking-tight mb-6"
         >
           Get In Touch
         </motion.h2>
@@ -23,7 +23,7 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.4, delay: 0.1 }}
-          className="text-xs uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-10 leading-relaxed font-medium"
+          className="text-base text-zinc-600 dark:text-zinc-400 mb-10 leading-relaxed"
         >
           Whether you have a project in mind or just want to chat, feel free to
           reach out. I&apos;m always open to new opportunities.
@@ -36,7 +36,7 @@ export function Contact() {
         >
           <a
             href="mailto:sakiba505@gmail.com"
-            className="inline-flex items-center gap-2 px-8 py-3.5 bg-zinc-900 hover:bg-zinc-800 dark:bg-zinc-50 dark:text-zinc-950 dark:hover:bg-zinc-200 text-white text-xs font-black uppercase tracking-widest transition-colors"
+            className="inline-flex items-center gap-2 px-8 py-3.5 bg-zinc-900 hover:bg-zinc-800 text-white dark:bg-none dark:bg-gradient-to-r dark:from-emerald-600 dark:to-cyan-600 dark:hover:from-emerald-500 dark:hover:to-cyan-500 dark:shadow-[0_0_20px_rgba(16,185,129,0.2)] dark:hover:shadow-[0_0_30px_rgba(16,185,129,0.5)] text-xs font-black uppercase tracking-widest hover:scale-105 active:scale-95 transition-all duration-300"
           >
             Say Hello
           </a>

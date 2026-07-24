@@ -8,7 +8,7 @@ export function ProjectCard({ project }) {
     <motion.div
       whileHover={{ y: -4 }}
       transition={{ duration: 0.2, ease: "easeOut" }}
-      className="bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600 transition-colors overflow-hidden"
+      className="bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-emerald-500 transition-colors overflow-hidden"
     >
       {/* Project Screenshot */}
       <div className="aspect-video relative overflow-hidden bg-zinc-100 dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800">
@@ -71,7 +71,7 @@ export function ProjectCard({ project }) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-bold uppercase tracking-widest text-zinc-900 dark:text-zinc-50 hover:underline"
+              className="text-xs font-bold uppercase tracking-widest text-zinc-900 dark:text-emerald-400 hover:underline dark:hover:text-emerald-300"
             >
               Live Demo &rarr;
             </a>

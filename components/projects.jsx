@@ -30,7 +30,7 @@ export function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.4 }}
-          className="text-xs font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-widest mb-12"
+          className="text-3xl md:text-4xl font-black text-zinc-900 dark:text-zinc-50 tracking-tight mb-12"
         >
           Projects
         </motion.h2>

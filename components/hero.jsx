@@ -4,12 +4,15 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6">
+    <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+      {/* Subtle modern green gradient background glow - dark mode only */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40vw] h-[40vw] min-w-[400px] min-h-[400px] hidden dark:block dark:bg-emerald-500/20 blur-[100px] rounded-full pointer-events-none" />
+      
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="text-center max-w-2xl"
+        className="relative text-center max-w-2xl z-10"
       >
         <motion.p
           initial={{ opacity: 0 }}
@@ -23,7 +26,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.5 }}
-          className="text-6xl md:text-8xl font-black text-zinc-900 dark:text-zinc-50 mb-6 tracking-tighter leading-none"
+          className="text-6xl md:text-8xl font-black text-zinc-900 dark:text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-emerald-400 dark:to-cyan-400 mb-6 tracking-tighter leading-none"
         >
           SAKIB AHAMED
         </motion.h1>
@@ -31,7 +34,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.4 }}
-          className="text-sm uppercase tracking-widest font-semibold text-zinc-400 dark:text-zinc-500 mb-8"
+          className="text-sm uppercase tracking-widest font-semibold text-zinc-600 dark:text-emerald-400 mb-8"
         >
           Full Stack Developer
         </motion.p>
@@ -51,15 +54,15 @@ export function Hero() {
         >
           <a
             href="#projects"
-            className="px-8 py-3.5 bg-zinc-900 hover:bg-zinc-800 dark:bg-zinc-50 dark:text-zinc-950 dark:hover:bg-zinc-200 text-white text-xs font-black uppercase tracking-widest transition-colors"
+            className="px-8 py-3.5 border border-zinc-200 text-zinc-900 hover:bg-zinc-50 dark:border-none dark:bg-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-700 text-xs font-black uppercase tracking-widest hover:scale-105 active:scale-95 transition-all duration-300"
           >
             View Projects
           </a>
           <a
             href="#contact"
-            className="px-8 py-3.5 border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-50 text-xs font-black uppercase tracking-widest hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            className="px-8 py-3.5 bg-zinc-900 hover:bg-zinc-800 text-white dark:bg-gradient-to-r dark:from-emerald-600 dark:to-cyan-600 dark:hover:from-emerald-500 dark:hover:to-cyan-500 dark:shadow-[0_0_20px_rgba(16,185,129,0.2)] dark:hover:shadow-[0_0_25px_rgba(16,185,129,0.4)] text-xs font-black uppercase tracking-widest hover:scale-105 active:scale-95 transition-all duration-300"
           >
-            Contact Me
+            Hire Me
           </a>
         </motion.div>
       </motion.div>

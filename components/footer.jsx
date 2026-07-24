@@ -53,6 +53,16 @@ export function Footer() {
                   Contact
                 </a>
               </li>
+              <li>
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs uppercase tracking-wider font-medium text-zinc-900 hover:text-zinc-700 dark:text-emerald-400 dark:hover:text-emerald-300 transition-colors"
+                >
+                  Resume
+                </a>
+              </li>
             </ul>
           </div>
 

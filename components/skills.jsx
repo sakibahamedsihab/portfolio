@@ -27,7 +27,7 @@ export function Skills() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.4 }}
-          className="text-xs font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-widest mb-12"
+          className="text-3xl md:text-4xl font-black text-zinc-900 dark:text-zinc-50 tracking-tight mb-12"
         >
           Skills
         </motion.h2>
@@ -39,7 +39,7 @@ export function Skills() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.3, delay: 0.1 }}
-                className="text-xs font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-widest mb-5"
+                className="text-lg font-bold text-zinc-900 dark:text-zinc-100 mb-5"
               >
                 {category.category}
               </motion.h3>
@@ -48,15 +48,15 @@ export function Skills() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-80px" }}
-                className="space-y-2"
+                className="flex flex-wrap gap-4"
               >
                 {category.skills.map((skill) => (
                   <motion.li
                     key={skill}
                     variants={itemVariants}
-                    className="flex items-center gap-2.5 px-3 py-2 border border-zinc-200 dark:border-zinc-800 text-xs uppercase tracking-wider font-medium text-zinc-600 dark:text-zinc-400"
+                    className="flex items-center gap-3 px-6 py-4 bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800/80 hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:border-zinc-300 dark:hover:border-emerald-500/70 transition-all text-sm md:text-base uppercase tracking-wider font-bold text-zinc-800 dark:text-zinc-200 cursor-default shadow-sm hover:shadow-md dark:shadow-none"
                   >
-                    <span className="text-sm shrink-0 text-zinc-500 dark:text-zinc-400">
+                    <span className="text-xl md:text-2xl shrink-0 text-zinc-600 dark:text-emerald-400">
                       {skillIconMap[skill] ?? null}
                     </span>
                     {skill}

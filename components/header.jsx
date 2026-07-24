@@ -19,7 +19,7 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-zinc-100 dark:bg-zinc-950/90 dark:border-zinc-900 transition-colors duration-200">
+    <header className="sticky top-0 z-40 bg-white/70 backdrop-blur-xl border-b border-zinc-200/50 dark:bg-zinc-950/70 dark:border-zinc-800/50 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -41,6 +41,14 @@ export function Header() {
                 {link.label}
               </a>
             ))}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs uppercase tracking-widest font-bold transition-colors h-full flex items-center border-b-2 relative top-[1px] border-transparent text-zinc-900 hover:text-zinc-700 dark:text-emerald-400 dark:hover:text-emerald-300"
+            >
+              Resume
+            </a>
             <ThemeToggle />
           </div>
 
@@ -94,6 +102,15 @@ export function Header() {
                 {link.label}
               </a>
             ))}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileOpen(false)}
+              className="text-xs uppercase tracking-widest font-bold text-zinc-900 hover:text-zinc-700 dark:text-emerald-400 dark:hover:text-emerald-300 transition-colors pt-2 border-t border-zinc-100 dark:border-zinc-900 mt-2"
+            >
+              Resume
+            </a>
           </div>
         </div>
       )}
