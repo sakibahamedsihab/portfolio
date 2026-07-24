@@ -11,11 +11,11 @@ const ThemeToggle = dynamic(
 );
 
 const navLinks = [
-  { href: "#about", label: "About", icon: LuUser },
-  { href: "#education", label: "Education", icon: LuGraduationCap },
-  { href: "#skills", label: "Skills", icon: LuZap },
-  { href: "#projects", label: "Projects", icon: LuCode },
-  { href: "#contact", label: "Contact", icon: LuMail },
+  { href: "/#about", label: "About", icon: LuUser },
+  { href: "/#education", label: "Education", icon: LuGraduationCap },
+  { href: "/#skills", label: "Skills", icon: LuZap },
+  { href: "/#projects", label: "Projects", icon: LuCode },
+  { href: "/#contact", label: "Contact", icon: LuMail },
 ];
 
 export function Header() {
@@ -27,7 +27,7 @@ export function Header() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <a
-              href="#"
+              href="/"
               className="text-lg font-black tracking-widest uppercase text-zinc-900 dark:text-emerald-500 font-display transition-colors"
             >
               <span className="text-zinc-400 dark:text-emerald-600 font-mono">{"</ "}</span>
