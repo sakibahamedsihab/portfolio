@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { LuExternalLink, LuGithub } from "react-icons/lu";
 
 export function ProjectCard({ project }) {
   return (
@@ -49,7 +50,7 @@ export function ProjectCard({ project }) {
 
       {/* Card Content */}
       <div className="p-6">
-        <h3 className="text-xs font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-widest mb-3">
+        <h3 className="text-[13px] font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-widest mb-3 font-display">
           {project.title}
         </h3>
         <p className="text-xs uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-4 leading-relaxed font-medium">
@@ -71,9 +72,10 @@ export function ProjectCard({ project }) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-bold uppercase tracking-widest text-zinc-900 dark:text-emerald-400 hover:underline dark:hover:text-emerald-300"
+              className="text-xs font-bold uppercase tracking-widest text-zinc-900 dark:text-emerald-400 hover:underline dark:hover:text-emerald-300 flex items-center gap-1"
             >
-              Live Demo &rarr;
+              <span>Live Demo</span>
+              <LuExternalLink className="w-3 h-3 mb-[2px]" />
             </a>
           )}
           {project.githubUrl && (
@@ -81,9 +83,10 @@ export function ProjectCard({ project }) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-bold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
+              className="text-xs font-bold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors flex items-center gap-1"
             >
-              Source Code &rarr;
+              <span>Source Code</span>
+              <LuGithub className="w-3 h-3 mb-[2px]" />
             </a>
           )}
         </div>

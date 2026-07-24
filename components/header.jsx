@@ -3,16 +3,18 @@
 import dynamic from "next/dynamic";
 import { useState } from "react";
 
+import { LuUser, LuCode, LuZap, LuMail, LuFileText, LuMenu, LuX } from "react-icons/lu";
+
 const ThemeToggle = dynamic(
   () => import("./theme-toggle").then((mod) => mod.ThemeToggle),
   { ssr: false }
 );
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#skills", label: "Skills" },
-  { href: "#contact", label: "Contact" },
+  { href: "#about", label: "About", icon: LuUser },
+  { href: "#projects", label: "Projects", icon: LuCode },
+  { href: "#skills", label: "Skills", icon: LuZap },
+  { href: "#contact", label: "Contact", icon: LuMail },
 ];
 
 export function Header() {
@@ -25,9 +27,11 @@ export function Header() {
           <div className="flex items-center">
             <a
               href="#"
-              className="text-lg font-black tracking-tight uppercase text-zinc-900 dark:text-zinc-50"
+              className="text-lg font-black tracking-tighter text-zinc-900 dark:text-emerald-500 font-display transition-colors"
             >
-              Sakib.
+              <span className="text-zinc-400 dark:text-emerald-600 font-mono">{"</ "}</span>
+              Sakib
+              <span className="text-zinc-400 dark:text-emerald-600 font-mono">{" >"}</span>
             </a>
           </div>
 
@@ -36,8 +40,9 @@ export function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-xs uppercase tracking-widest font-semibold transition-colors h-full flex items-center border-b-2 relative top-[1px] border-transparent text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50"
+                className="text-xs uppercase tracking-widest font-semibold transition-colors h-full flex items-center gap-2 border-b-2 relative top-[1px] border-transparent text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50"
               >
+                <link.icon className="w-4 h-4 mb-[2px]" />
                 {link.label}
               </a>
             ))}
@@ -45,8 +50,9 @@ export function Header() {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs uppercase tracking-widest font-bold transition-colors h-full flex items-center border-b-2 relative top-[1px] border-transparent text-zinc-900 hover:text-zinc-700 dark:text-emerald-400 dark:hover:text-emerald-300"
+              className="text-xs uppercase tracking-widest font-bold transition-colors h-full flex items-center gap-2 border-b-2 relative top-[1px] border-transparent text-zinc-900 hover:text-zinc-700 dark:text-emerald-400 dark:hover:text-emerald-300"
             >
+              <LuFileText className="w-4 h-4 mb-[2px]" />
               Resume
             </a>
             <ThemeToggle />
@@ -97,8 +103,9 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-xs uppercase tracking-widest font-semibold text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors"
+                className="text-xs uppercase tracking-widest font-semibold flex items-center gap-2 text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors"
               >
+                <link.icon className="w-4 h-4 mb-[2px]" />
                 {link.label}
               </a>
             ))}
@@ -107,8 +114,9 @@ export function Header() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileOpen(false)}
-              className="text-xs uppercase tracking-widest font-bold text-zinc-900 hover:text-zinc-700 dark:text-emerald-400 dark:hover:text-emerald-300 transition-colors pt-2 border-t border-zinc-100 dark:border-zinc-900 mt-2"
+              className="text-xs uppercase tracking-widest font-bold flex items-center gap-2 text-zinc-900 hover:text-zinc-700 dark:text-emerald-400 dark:hover:text-emerald-300 transition-colors pt-4 border-t border-zinc-100 dark:border-zinc-900 mt-2"
             >
+              <LuFileText className="w-4 h-4 mb-[2px]" />
               Resume
             </a>
           </div>

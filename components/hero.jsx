@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { LuArrowRight, LuBriefcase } from "react-icons/lu";
 
 export function Hero() {
   return (
@@ -26,7 +27,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.5 }}
-          className="text-6xl md:text-8xl font-black text-zinc-900 dark:text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-emerald-400 dark:to-cyan-400 mb-6 tracking-tighter leading-none"
+          className="text-6xl md:text-8xl font-black font-display text-zinc-900 dark:text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-emerald-400 dark:to-cyan-400 mb-6 tracking-tighter leading-none"
         >
           SAKIB AHAMED
         </motion.h1>
@@ -54,15 +55,17 @@ export function Hero() {
         >
           <a
             href="#projects"
-            className="px-8 py-3.5 border border-zinc-200 text-zinc-900 hover:bg-zinc-50 dark:border-none dark:bg-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-700 text-xs font-black uppercase tracking-widest hover:scale-105 active:scale-95 transition-all duration-300"
+            className="flex items-center justify-center gap-2 px-8 py-3.5 border border-zinc-200 text-zinc-900 hover:bg-zinc-50 dark:border-none dark:bg-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-700 text-xs font-black uppercase tracking-widest hover:scale-105 active:scale-95 transition-all duration-300"
           >
-            View Projects
+            <span>View Projects</span>
+            <LuArrowRight className="w-4 h-4 mb-[2px]" />
           </a>
           <a
             href="#contact"
-            className="px-8 py-3.5 bg-zinc-900 hover:bg-zinc-800 text-white dark:bg-gradient-to-r dark:from-emerald-600 dark:to-cyan-600 dark:hover:from-emerald-500 dark:hover:to-cyan-500 dark:shadow-[0_0_20px_rgba(16,185,129,0.2)] dark:hover:shadow-[0_0_25px_rgba(16,185,129,0.4)] text-xs font-black uppercase tracking-widest hover:scale-105 active:scale-95 transition-all duration-300"
+            className="flex items-center justify-center gap-2 px-8 py-3.5 bg-zinc-900 hover:bg-zinc-800 text-white dark:bg-gradient-to-r dark:from-emerald-600 dark:to-cyan-600 dark:hover:from-emerald-500 dark:hover:to-cyan-500 dark:shadow-[0_0_20px_rgba(16,185,129,0.2)] dark:hover:shadow-[0_0_25px_rgba(16,185,129,0.4)] text-xs font-black uppercase tracking-widest hover:scale-105 active:scale-95 transition-all duration-300"
           >
-            Hire Me
+            <LuBriefcase className="w-4 h-4 mb-[2px]" />
+            <span>Hire Me</span>
           </a>
         </motion.div>
       </motion.div>

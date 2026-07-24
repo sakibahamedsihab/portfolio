@@ -27,9 +27,11 @@ export function Skills() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.4 }}
-          className="text-3xl md:text-4xl font-black text-zinc-900 dark:text-zinc-50 tracking-tight mb-12"
+          className="text-3xl md:text-4xl font-black text-zinc-900 dark:text-zinc-50 tracking-tight mb-12 font-display"
         >
+          <span className="text-zinc-400 dark:text-emerald-600 font-mono">{"</ "}</span>
           Skills
+          <span className="text-zinc-400 dark:text-emerald-600 font-mono">{" >"}</span>
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {skillCategories.map((category) => (

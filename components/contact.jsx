@@ -39,9 +39,11 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.4 }}
-          className="text-3xl md:text-4xl font-black text-zinc-900 dark:text-zinc-50 tracking-tight mb-6"
+          className="text-3xl md:text-4xl font-black text-zinc-900 dark:text-zinc-50 tracking-tight mb-6 font-display"
         >
-          Get In Touch
+          <span className="text-zinc-400 dark:text-emerald-600 font-mono">{"</ "}</span>
+          Contact
+          <span className="text-zinc-400 dark:text-emerald-600 font-mono">{" >"}</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 12 }}
