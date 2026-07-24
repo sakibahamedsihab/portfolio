@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import { useState } from "react";
 
-import { LuUser, LuCode, LuZap, LuMail, LuFileText, LuMenu, LuX } from "react-icons/lu";
+import { LuUser, LuCode, LuZap, LuMail, LuFileText, LuMenu, LuX, LuGraduationCap } from "react-icons/lu";
 
 const ThemeToggle = dynamic(
   () => import("./theme-toggle").then((mod) => mod.ThemeToggle),
@@ -12,8 +12,9 @@ const ThemeToggle = dynamic(
 
 const navLinks = [
   { href: "#about", label: "About", icon: LuUser },
-  { href: "#projects", label: "Projects", icon: LuCode },
+  { href: "#education", label: "Education", icon: LuGraduationCap },
   { href: "#skills", label: "Skills", icon: LuZap },
+  { href: "#projects", label: "Projects", icon: LuCode },
   { href: "#contact", label: "Contact", icon: LuMail },
 ];
 
