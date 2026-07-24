@@ -27,7 +27,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.5 }}
-          className="text-6xl md:text-8xl font-black font-display text-zinc-900 dark:text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-emerald-400 dark:to-cyan-400 mb-6 tracking-tighter leading-none"
+          className="text-6xl md:text-8xl font-black font-display text-zinc-900 dark:text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-emerald-400 dark:to-cyan-400 mb-6 tracking-widest leading-none uppercase"
         >
           SAKIB AHAMED
         </motion.h1>

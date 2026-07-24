@@ -26,7 +26,7 @@ export function GithubGraph() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.4 }}
-          className="text-3xl md:text-4xl font-black text-zinc-900 dark:text-zinc-50 tracking-tight mb-12 font-display"
+          className="text-3xl md:text-4xl font-black text-zinc-900 dark:text-zinc-50 tracking-widest uppercase mb-12 font-display"
         >
           <span className="text-zinc-400 dark:text-emerald-600 font-mono">{"</ "}</span>
           Contributions

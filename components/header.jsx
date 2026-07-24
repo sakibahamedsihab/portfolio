@@ -27,7 +27,7 @@ export function Header() {
           <div className="flex items-center">
             <a
               href="#"
-              className="text-lg font-black tracking-tighter text-zinc-900 dark:text-emerald-500 font-display transition-colors"
+              className="text-lg font-black tracking-widest uppercase text-zinc-900 dark:text-emerald-500 font-display transition-colors"
             >
               <span className="text-zinc-400 dark:text-emerald-600 font-mono">{"</ "}</span>
               Sakib
