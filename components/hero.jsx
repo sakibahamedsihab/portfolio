@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { LuArrowRight, LuBriefcase } from "react-icons/lu";
+import { LuArrowRight, LuDownload } from "react-icons/lu";
 
 export function Hero() {
   return (
@@ -61,11 +61,13 @@ export function Hero() {
             <LuArrowRight className="w-4 h-4 mb-[2px]" />
           </a>
           <a
-            href="#contact"
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 px-8 py-3.5 bg-zinc-900 hover:bg-zinc-800 text-white dark:bg-gradient-to-r dark:from-emerald-600 dark:to-cyan-600 dark:hover:from-emerald-500 dark:hover:to-cyan-500 dark:shadow-[0_0_20px_rgba(16,185,129,0.2)] dark:hover:shadow-[0_0_25px_rgba(16,185,129,0.4)] text-xs font-black uppercase tracking-widest hover:scale-105 active:scale-95 transition-all duration-300"
           >
-            <LuBriefcase className="w-4 h-4 mb-[2px]" />
-            <span>Hire Me</span>
+            <LuDownload className="w-4 h-4 mb-[2px]" />
+            <span>Resume</span>
           </a>
         </motion.div>
       </motion.div>
