@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { LuArrowRight, LuDownload } from "react-icons/lu";
 
@@ -8,13 +9,29 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
       {/* Subtle modern green gradient background glow - dark mode only */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40vw] h-[40vw] min-w-[400px] min-h-[400px] hidden dark:block dark:bg-emerald-500/20 blur-[100px] rounded-full pointer-events-none" />
-      
+
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="relative text-center max-w-2xl z-10"
+        className="relative text-center max-w-2xl z-10 flex flex-col items-center"
       >
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.1, duration: 0.5, type: "spring", stiffness: 200 }}
+          className="relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-4 border-white dark:border-zinc-900 shadow-[0_0_20px_rgba(16,185,129,0.3)] mb-8"
+        >
+          <Image
+            src="/sakib.jpg"
+            alt="Sakib Ahamed"
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 768px) 128px, 160px"
+          />
+        </motion.div>
+
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

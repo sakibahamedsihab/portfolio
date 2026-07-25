@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaEnvelope, FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaWhatsapp, FaLinkedin, FaGithub, FaPhone } from "react-icons/fa";
 
 export function Contact() {
   const contactMethods = [
@@ -13,9 +13,16 @@ export function Contact() {
       hoverColor: "group-hover:text-emerald-500 dark:group-hover:text-emerald-400",
     },
     {
+      icon: <FaPhone className="w-6 h-6" />,
+      title: "Phone",
+      value: "01892479883",
+      href: "tel:01892479883",
+      hoverColor: "group-hover:text-emerald-500 dark:group-hover:text-emerald-400",
+    },
+    {
       icon: <FaWhatsapp className="w-6 h-6" />,
       title: "WhatsApp",
-      value: "Message Me",
+      value: "01892479883",
       href: "https://wa.me/01892479883",
       hoverColor: "group-hover:text-green-500 dark:group-hover:text-green-400",
     },
@@ -57,7 +64,7 @@ export function Contact() {
         </motion.p>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}

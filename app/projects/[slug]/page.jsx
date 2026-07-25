@@ -86,6 +86,30 @@ export default async function ProjectDetails({ params }) {
                 </ul>
               </section>
             )}
+
+            {project.challenges && (
+              <section>
+                <h2 className="text-xl font-bold uppercase tracking-widest mb-4 font-display flex items-center gap-2">
+                  <span className="text-zinc-400 dark:text-emerald-600 font-mono">{"//"}</span>
+                  Challenges Faced
+                </h2>
+                <p className="text-sm md:text-base leading-relaxed text-zinc-600 dark:text-zinc-400 font-medium border-l-2 border-emerald-500 pl-4 py-1">
+                  {project.challenges}
+                </p>
+              </section>
+            )}
+
+            {project.futurePlans && (
+              <section>
+                <h2 className="text-xl font-bold uppercase tracking-widest mb-4 font-display flex items-center gap-2">
+                  <span className="text-zinc-400 dark:text-emerald-600 font-mono">{"//"}</span>
+                  Future Plans
+                </h2>
+                <p className="text-sm md:text-base leading-relaxed text-zinc-600 dark:text-zinc-400 font-medium border-l-2 border-cyan-500 pl-4 py-1">
+                  {project.futurePlans}
+                </p>
+              </section>
+            )}
           </div>
 
           <div className="space-y-6">

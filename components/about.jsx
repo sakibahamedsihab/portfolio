@@ -50,8 +50,8 @@ export function About() {
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
           >
-            When I&apos;m not coding, I&apos;m exploring new tools, building side
-            projects, and constantly leveling up my skills. I&apos;m open to
+            When I&apos;m not coding, you can usually find me watching Football, Tennis, and Formula 1. 
+            I also love exploring new tools and constantly leveling up my skills. I&apos;m open to
             freelance work and full-time opportunities.
           </motion.p>
         </motion.div>

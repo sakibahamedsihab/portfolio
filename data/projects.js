@@ -17,6 +17,8 @@ export const projects = [
     liveUrl: "https://servicehub-client-five.vercel.app",
     githubUrl: "https://github.com/sakibahamedsihab/servicehub-client",
     image: "/projects/servicehub.png",
+    challenges: "One of the main challenges was implementing a seamless real-time booking status update across different roles without overloading the database. Ensuring secure role-based routing on both the client and server side also required careful token validation.",
+    futurePlans: "In the future, I plan to integrate a real-time chat feature between service providers and clients, and add a secure payment gateway integration like Stripe."
   },
   {
     slug: "retro-recipe",
@@ -36,6 +38,8 @@ export const projects = [
     liveUrl: "https://retro-recipe-client.vercel.app",
     githubUrl: "https://github.com/sakibahamedsihab/retro-recipe-client",
     image: "/projects/retro-recipe.png",
+    challenges: "Handling multipart/form-data for image uploads alongside complex JSON data structures required setting up a robust middleware pipeline. Styling the UI to perfectly mimic a vintage computer interface without sacrificing modern accessibility was also tricky.",
+    futurePlans: "I intend to add a collaborative 'Cookbook' feature where multiple users can contribute to a shared recipe collection, and implement a robust caching layer with Redis to speed up queries."
   },
   {
     slug: "pet-adoption",
@@ -55,5 +59,7 @@ export const projects = [
     liveUrl: "https://pet-adoption-client-rho.vercel.app",
     githubUrl: "https://github.com/sakibahamedsihab/pet-adoption-client",
     image: "/projects/pet-adoption.png",
+    challenges: "Designing an intuitive multi-step adoption application form that persisted state securely was a significant hurdle. I also had to optimize the MongoDB queries to handle complex, multi-parameter filtering for pet searches efficiently.",
+    futurePlans: "Future updates will include an integrated mapping API to show nearby shelters visually, and a notification system to alert users when a pet matching their criteria becomes available."
   },
 ];
